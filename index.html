@@ -115,17 +115,18 @@
       justify-content: space-between;
       align-items: flex-start;
       gap: 12px;
+      margin-bottom: 18px;
     }
 
-    .icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 18px;
-      background: var(--green-soft);
-      color: var(--green);
-      display: grid;
-      place-items: center;
+    .headshot {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #d1fae5;
+      box-shadow: 0 6px 18px rgba(4, 120, 87, 0.15);
       flex-shrink: 0;
+      background: #ecfdf5;
     }
 
     .book-badge {
@@ -139,7 +140,7 @@
     }
 
     .card h2 {
-      margin: 18px 0 8px;
+      margin: 0 0 8px;
       font-size: 1.45rem;
       line-height: 1.2;
       letter-spacing: -0.02em;
@@ -204,6 +205,11 @@
       .card {
         padding: 20px;
       }
+
+      .headshot {
+        width: 64px;
+        height: 64px;
+      }
     }
   </style>
 </head>
@@ -211,33 +217,17 @@
   <main class="container">
     <section class="hero">
       <p class="eyebrow">MENA SA Board Interviews</p>
-      <h1>Choose one of us and book your interview slot!</h1>
+      <h1>Choose your interviewer and book your interview slot</h1>
       <p class="subtext">
-        After you select an interviewer, you will be taken directly to their Google appointment page where you can choose an available 30-minute slot.
-      </p><p class="subtext">
-        We are looking forward to speaking with you and hearing about how you wish to contribute to MENA!
+        Select the interviewer that works best for you. You will be taken directly to their Calendly page to choose an available time.
       </p>
-      <div class="pill">Interview window: March 12–21</div>
-    </section>
-
-    <section class="notes">
-      <h3>Before you book</h3>
-      <ul>
-        <li>Use your preferred email so the calendar invite reaches you correctly.</li>
-        <li>Choose only one interview slot unless you were told otherwise.</li>
-        <li>If you need to reschedule, use the confirmation email from Google.</li>
-      </ul>
-      <p class="footer">Good luck!!</p>
+      <div class="pill">Interview window: March 12–21 · 10:00 AM–8:00 PM</div>
     </section>
 
     <section class="grid">
       <a class="card" href="https://calendar.app.google/1v5Kzp17ZvxMdXyB6" target="_blank" rel="noreferrer">
         <div class="card-top">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" width="26" height="26" stroke="currentColor" stroke-width="1.8">
-              <path d="M8 7V3m8 4V3M4 11h16M6 5h12a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a2 2 0 0 1 2-2Z"></path>
-            </svg>
-          </div>
+          <img class="headshot" src="images/rani.jpg" alt="Headshot of Rani Joudeh" />
           <div class="book-badge">Book</div>
         </div>
         <h2>Rani Joudeh</h2>
@@ -250,14 +240,10 @@
 
       <a class="card" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3GvMIcZkeMvSb8z4jgHi0WXbFMg3jAVxWps-oY9LmygCGMB057wy4ah3HsdkRePIFkvd-xS5ta" target="_blank" rel="noreferrer">
         <div class="card-top">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" width="26" height="26" stroke="currentColor" stroke-width="1.8">
-              <path d="M8 7V3m8 4V3M4 11h16M6 5h12a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a2 2 0 0 1 2-2Z"></path>
-            </svg>
-          </div>
+          <img class="headshot" src="images/aala.png" alt="Headshot of Aala Basheir" />
           <div class="book-badge">Book</div>
         </div>
-        <h2>Aala basheir</h2>
+        <h2>Aala Basheir</h2>
         <p class="role">Co-president</p>
         <div class="card-bottom">
           <span>Open booking page</span>
@@ -267,11 +253,7 @@
 
       <a class="card" href="https://calendar.app.google/ULVFGX6PHkfyZPC69" target="_blank" rel="noreferrer">
         <div class="card-top">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" width="26" height="26" stroke="currentColor" stroke-width="1.8">
-              <path d="M8 7V3m8 4V3M4 11h16M6 5h12a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a2 2 0 0 1 2-2Z"></path>
-            </svg>
-          </div>
+          <img class="headshot" src="images/mahmoud.jpeg" alt="Headshot of Mahmoud El-Eshmawi" />
           <div class="book-badge">Book</div>
         </div>
         <h2>Mahmoud El-Eshmawi</h2>
@@ -284,11 +266,7 @@
 
       <a class="card" href="https://calendar.app.google/hVBjbPtmw557mBPk6" target="_blank" rel="noreferrer">
         <div class="card-top">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" width="26" height="26" stroke="currentColor" stroke-width="1.8">
-              <path d="M8 7V3m8 4V3M4 11h16M6 5h12a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a2 2 0 0 1 2-2Z"></path>
-            </svg>
-          </div>
+          <img class="headshot" src="images/batool.jpeg" alt="Headshot of Batool Salman" />
           <div class="book-badge">Book</div>
         </div>
         <h2>Batool Salman</h2>
@@ -301,11 +279,7 @@
 
       <a class="card" href="https://calendar.app.google/U8Px52oBXkjEr5zk6" target="_blank" rel="noreferrer">
         <div class="card-top">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" width="26" height="26" stroke="currentColor" stroke-width="1.8">
-              <path d="M8 7V3m8 4V3M4 11h16M6 5h12a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a2 2 0 0 1 2-2Z"></path>
-            </svg>
-          </div>
+          <img class="headshot" src="images/nader.jpeg" alt="Headshot of Nader Rahhal" />
           <div class="book-badge">Book</div>
         </div>
         <h2>Nader Rahhal</h2>
@@ -317,6 +291,15 @@
       </a>
     </section>
 
+    <section class="notes">
+      <h3>Before you book</h3>
+      <ul>
+        <li>Use your preferred email so the calendar invite reaches you correctly.</li>
+        <li>Choose only one interview slot unless you were told otherwise.</li>
+        <li>If you need to reschedule, use the confirmation email from Calendly.</li>
+      </ul>
+      <p class="footer">Replace each placeholder Calendly link and interviewer name before publishing.</p>
+    </section>
   </main>
 </body>
 </html>
